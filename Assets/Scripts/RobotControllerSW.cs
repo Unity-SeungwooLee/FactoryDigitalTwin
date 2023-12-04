@@ -12,6 +12,7 @@ public class RobotControllerSW : MonoBehaviour
     public GameObject body3;
     public GameObject body4;
     public GameObject body5;
+    public GameObject body6;
     float accumulatedRotationZ = 0f; // Accumulated rotation for the Z axis
 
     void Start()
@@ -22,7 +23,7 @@ public class RobotControllerSW : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.L) || Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.L) || Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.K) || Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.P))
         {
             accumulatedRotationZ = 1f;
         }
@@ -121,6 +122,30 @@ public class RobotControllerSW : MonoBehaviour
             }
             Debug.Log(accumulatedRotationZ);
             body5.transform.Rotate(new Vector3(0, -accumulatedRotationZ, 0));
+        }
+
+        if (Input.GetKey(KeyCode.O))
+        {
+            accumulatedRotationZ += speed * Time.deltaTime * 0.001f;
+
+            if (accumulatedRotationZ > maxRotationZ)
+            {
+                accumulatedRotationZ = maxRotationZ;
+            }
+            Debug.Log(accumulatedRotationZ);
+            body6.transform.Rotate(new Vector3(accumulatedRotationZ, 0, 0));
+        }
+
+        if (Input.GetKey(KeyCode.P))
+        {
+            accumulatedRotationZ += speed * Time.deltaTime * 0.001f;
+
+            if (accumulatedRotationZ > maxRotationZ)
+            {
+                accumulatedRotationZ = maxRotationZ;
+            }
+            Debug.Log(accumulatedRotationZ);
+            body6.transform.Rotate(new Vector3(-accumulatedRotationZ, 0, 0));
         }
     }
 }
