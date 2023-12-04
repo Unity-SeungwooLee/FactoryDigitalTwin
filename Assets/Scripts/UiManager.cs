@@ -51,7 +51,7 @@ public class UiManager : MonoBehaviour
         bodyFive.text = "Body5   " + (body5.transform.rotation.eulerAngles.x + -270).ToString();
         //Debug.Log(body6.transform.rotation.eulerAngles);
         bodySix.text = "Body6   " + (body6.transform.rotation.eulerAngles.x + -270).ToString();
-        Debug.Log(body7.transform.rotation.eulerAngles);
+        //Debug.Log(body7.transform.rotation.eulerAngles);
         bodySeven.text = "Body7   " + body7.transform.rotation.eulerAngles.y.ToString();
     }
 }

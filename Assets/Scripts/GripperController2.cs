@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class GripperControl : MonoBehaviour
+public class GripperController2 : MonoBehaviour
 {
     private bool isMoving = false;
 
@@ -16,11 +16,11 @@ public class GripperControl : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.G) && !isMoving)
         {
-            StartCoroutine(MoveGripper(0.000066f, 3f));
+            StartCoroutine(MoveGripper(-0.000074f, 3f));
         }
         else if (Input.GetKeyDown(KeyCode.H) && !isMoving)
         {
-            StartCoroutine(MoveGripper(0.0003f, 3f));
+            StartCoroutine(MoveGripper(-0.000293f, 3f));
         }
     }
 
@@ -29,7 +29,7 @@ public class GripperControl : MonoBehaviour
         isMoving = true;
 
         Vector3 startPosition = transform.localPosition;
-        Vector3 target = new Vector3(0f, 0.000319f, targetPosition);
+        Vector3 target = new Vector3(0f, 0.00032f, targetPosition);
 
         float elapsedTime = 0f;
 
