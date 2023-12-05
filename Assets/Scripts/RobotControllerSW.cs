@@ -37,7 +37,7 @@ public class RobotControllerSW : MonoBehaviour
             {
                 accumulatedRotationZ = maxRotationZ;
             }
-            Debug.Log(accumulatedRotationZ);
+            //Debug.Log(accumulatedRotationZ);
             body2.transform.Rotate(new Vector3(0, 0, accumulatedRotationZ));
         }
 
@@ -49,7 +49,7 @@ public class RobotControllerSW : MonoBehaviour
             {
                 accumulatedRotationZ = maxRotationZ;
             }
-            Debug.Log(accumulatedRotationZ);
+            //Debug.Log(accumulatedRotationZ);
             body2.transform.Rotate(new Vector3(0, 0, -accumulatedRotationZ));
         }
 
@@ -61,7 +61,7 @@ public class RobotControllerSW : MonoBehaviour
             {
                 accumulatedRotationZ = maxRotationZ;
             }
-            Debug.Log(accumulatedRotationZ);
+            //Debug.Log(accumulatedRotationZ);
             body3.transform.Rotate(new Vector3(accumulatedRotationZ, 0, 0));
         }
 
@@ -73,7 +73,7 @@ public class RobotControllerSW : MonoBehaviour
             {
                 accumulatedRotationZ = maxRotationZ;
             }
-            Debug.Log(accumulatedRotationZ);
+            //Debug.Log(accumulatedRotationZ);
             body3.transform.Rotate(new Vector3(-accumulatedRotationZ, 0, 0));
         }
 
@@ -85,7 +85,7 @@ public class RobotControllerSW : MonoBehaviour
             {
                 accumulatedRotationZ = maxRotationZ;
             }
-            Debug.Log(accumulatedRotationZ);
+            //Debug.Log(accumulatedRotationZ);
             body4.transform.Rotate(new Vector3(accumulatedRotationZ, 0, 0));
         }
 
@@ -97,7 +97,7 @@ public class RobotControllerSW : MonoBehaviour
             {
                 accumulatedRotationZ = maxRotationZ;
             }
-            Debug.Log(accumulatedRotationZ);
+            //Debug.Log(accumulatedRotationZ);
             body4.transform.Rotate(new Vector3(-accumulatedRotationZ, 0, 0));
         }
 
@@ -109,7 +109,7 @@ public class RobotControllerSW : MonoBehaviour
             {
                 accumulatedRotationZ = maxRotationZ;
             }
-            Debug.Log(accumulatedRotationZ);
+            //Debug.Log(accumulatedRotationZ);
             body5.transform.Rotate(new Vector3(0, accumulatedRotationZ, 0));
         }
 
@@ -121,7 +121,7 @@ public class RobotControllerSW : MonoBehaviour
             {
                 accumulatedRotationZ = maxRotationZ;
             }
-            Debug.Log(accumulatedRotationZ);
+            //Debug.Log(accumulatedRotationZ);
             body5.transform.Rotate(new Vector3(0, -accumulatedRotationZ, 0));
         }
 
@@ -133,7 +133,7 @@ public class RobotControllerSW : MonoBehaviour
             {
                 accumulatedRotationZ = maxRotationZ;
             }
-            Debug.Log(accumulatedRotationZ);
+            //Debug.Log(accumulatedRotationZ);
             body6.transform.Rotate(new Vector3(accumulatedRotationZ, 0, 0));
         }
 
@@ -145,7 +145,7 @@ public class RobotControllerSW : MonoBehaviour
             {
                 accumulatedRotationZ = maxRotationZ;
             }
-            Debug.Log(accumulatedRotationZ);
+            //Debug.Log(accumulatedRotationZ);
             body6.transform.Rotate(new Vector3(-accumulatedRotationZ, 0, 0));
         }
 
@@ -157,7 +157,7 @@ public class RobotControllerSW : MonoBehaviour
             {
                 accumulatedRotationZ = maxRotationZ;
             }
-            Debug.Log(accumulatedRotationZ);
+            //Debug.Log(accumulatedRotationZ);
             body7.transform.Rotate(new Vector3(0, accumulatedRotationZ, 0));
         }
 
@@ -169,7 +169,7 @@ public class RobotControllerSW : MonoBehaviour
             {
                 accumulatedRotationZ = maxRotationZ;
             }
-            Debug.Log(accumulatedRotationZ);
+            //Debug.Log(accumulatedRotationZ);
             body7.transform.Rotate(new Vector3(0, -accumulatedRotationZ, 0));
         }
     }

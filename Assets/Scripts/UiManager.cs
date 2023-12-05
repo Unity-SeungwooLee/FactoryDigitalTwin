@@ -30,29 +30,28 @@ public class UiManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bodyTwo.text = "Body2   " + body2.transform.eulerAngles.y.ToString();
-        //Three.transform.rotation = Quaternion.Euler(270f, 0f, 0f);
-        bodyThree.text = "Body3   " + body3.transform.eulerAngles.x.ToString();
-        bodyFour.text = "Body4   " + body4.transform.rotation.eulerAngles.x.ToString();
-        bodyFive.text = "Body5   " + body5.transform.rotation.eulerAngles.z.ToString();
-        bodySix.text = "Body6   " + body6.transform.rotation.eulerAngles.x.ToString();
-        bodySeven.text = "Body7   " + body7.transform.rotation.eulerAngles.y.ToString();
+        bodyTwo.text = "Body2     " + ((int)body2.transform.localRotation.eulerAngles.z).ToString() + "¡Æ";
+        bodyThree.text = "Body3     " + ((int)body3.transform.localRotation.eulerAngles.x).ToString() + "¡Æ";
+        bodyFour.text = "Body4     " + ((int)body4.transform.localRotation.eulerAngles.x).ToString() + "¡Æ";
+        bodyFive.text = "Body5     " + ((int)body5.transform.localRotation.eulerAngles.y).ToString() + "¡Æ";
+        bodySix.text = "Body6     " + ((int)body6.transform.localRotation.eulerAngles.x -270).ToString() + "¡Æ";
+        bodySeven.text = "Body7     " + ((int)body7.transform.localRotation.eulerAngles.y).ToString() + "¡Æ" ;
     }
 
     void Update()
     {
         //Debug.Log(body2.transform.rotation.eulerAngles);
-        bodyTwo.text = "Body2   " + body2.transform.eulerAngles.y.ToString();
+        bodyTwo.text = "Body2     " + ((int)body2.transform.localRotation.eulerAngles.z).ToString() + "¡Æ";
         //Debug.Log(body3.transform.rotation.eulerAngles);
-        bodyThree.text = "Body3   " + (body3.transform.eulerAngles.x + -270).ToString();
+        bodyThree.text = "Body3     " + ((int)body3.transform.localRotation.eulerAngles.x).ToString() +"¡Æ";
         //Debug.Log(body4.transform.rotation.eulerAngles);
-        bodyFour.text = "Body4   " + (body4.transform.rotation.eulerAngles.x + -270).ToString();
+        bodyFour.text = "Body4     " + ((int)body4.transform.localRotation.eulerAngles.x).ToString() +"¡Æ";
         //Debug.Log(body5.transform.rotation.eulerAngles);
-        bodyFive.text = "Body5   " + (body5.transform.rotation.eulerAngles.x + -270).ToString();
+        bodyFive.text = "Body5     " + ((int)body5.transform.localRotation.eulerAngles.y).ToString() +"¡Æ";
         //Debug.Log(body6.transform.rotation.eulerAngles);
-        bodySix.text = "Body6   " + (body6.transform.rotation.eulerAngles.x + -270).ToString();
+        bodySix.text = "Body6     " + ((int)body6.transform.localRotation.eulerAngles.x -270).ToString() +"¡Æ";
         //Debug.Log(body7.transform.rotation.eulerAngles);
-        bodySeven.text = "Body7   " + body7.transform.rotation.eulerAngles.y.ToString();
+        bodySeven.text = "Body7     " + ((int)body7.transform.localRotation.eulerAngles.y).ToString() +"¡Æ";
     }
 }
 
