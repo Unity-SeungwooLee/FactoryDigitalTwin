@@ -8,7 +8,7 @@ public class GripperControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // 초기화 또는 다른 설정이 필요하다면 이곳에 추가
+
     }
 
     // Update is called once per frame
