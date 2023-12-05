@@ -45,14 +45,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body2: {fileID: 0}
-  bodyOne: {fileID: 0}
+  body3: {fileID: 0}
+  body4: {fileID: 0}
+  body5: {fileID: 0}
+  body6: {fileID: 0}
+  body7: {fileID: 0}
   bodyTwo: {fileID: 0}
   bodyThree: {fileID: 0}
   bodyFour: {fileID: 0}
   bodyFive: {fileID: 0}
   bodySix: {fileID: 0}
   bodySeven: {fileID: 0}
-  bodyOneAngle: 0
   bodyTwoAngle: 0
   bodyThreeAngle: 0
   bodyFourAngle: 0
