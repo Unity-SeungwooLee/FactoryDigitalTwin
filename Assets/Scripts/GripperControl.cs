@@ -3,46 +3,33 @@ using UnityEngine;
 
 public class GripperControl : MonoBehaviour
 {
-    private bool isMoving = false;
+    public float speed = 0.000001f;
+    private Vector3 startPosition;
+    private Vector3 endPosition;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        startPosition = new Vector3(0f, 0.00032f, -0.000074f);
+        endPosition = new Vector3(0f, 0.00032f, -0.000293f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G) && !isMoving)
+        if (Input.GetKey(KeyCode.G))
         {
-            StartCoroutine(MoveGripper(0.000066f, 3f));
+            MoveObject(Vector3.back);  // G 키를 누르고 있을 때 지속적으로 이동
         }
-        else if (Input.GetKeyDown(KeyCode.H) && !isMoving)
+        else if (Input.GetKey(KeyCode.H))
         {
-            StartCoroutine(MoveGripper(0.0003f, 3f));
+            MoveObject(Vector3.forward);  // H 키를 누르고 있을 때 지속적으로 이동
         }
     }
 
-    IEnumerator MoveGripper(float targetPosition, float duration)
+    void MoveObject(Vector3 direction)
     {
-        isMoving = true;
-
-        Vector3 startPosition = transform.localPosition;
-        Vector3 target = new Vector3(0f, 0.000319f, targetPosition);
-
-        float elapsedTime = 0f;
-
-        while (elapsedTime < duration)
-        {
-            transform.localPosition = Vector3.Lerp(startPosition, target, elapsedTime / duration);
-            elapsedTime += Time.deltaTime;
-            yield return null;
-        }
-
-        // 보정을 위해 마지막에 명시적으로 위치를 설정
-        transform.localPosition = target;
-
-        isMoving = false;
+        float step = speed * Time.deltaTime;
+        transform.localPosition += direction * step;
     }
 }

@@ -26,7 +26,7 @@ public class RobotControllerSW : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.L) || Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.K) || Input.GetKeyDown(KeyCode.O) || Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.R))
         {
-            accumulatedRotationZ = 0.1f; //초기 속도
+            accumulatedRotationZ = 0.2f; //초기 속도
         }
 
         if (Input.GetKey(KeyCode.A))
