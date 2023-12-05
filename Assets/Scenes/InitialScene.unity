@@ -884,6 +884,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas2
       objectReference: {fileID: 0}
+    - target: {fileID: 3518160409546436606, guid: e43acaceebf1e6b4f8aecd025722077a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037718511094267163, guid: e43acaceebf1e6b4f8aecd025722077a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719780845696860934, guid: e43acaceebf1e6b4f8aecd025722077a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763061353278767749, guid: e43acaceebf1e6b4f8aecd025722077a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3076,6 +3096,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BodyUI
       objectReference: {fileID: 0}
+    - target: {fileID: 4928613712590483603, guid: 91607f7d8f089ec479bcf8789b1e191e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6093164426432045417, guid: 91607f7d8f089ec479bcf8789b1e191e,
         type: 3}
       propertyPath: body2
@@ -3310,8 +3335,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 7767882938105835572, guid: dc6f0c790887c7f48a8e5e62496d1577, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc6f0c790887c7f48a8e5e62496d1577, type: 3}
@@ -3405,7 +3429,7 @@ SceneRoots:
   - {fileID: 583833938}
   - {fileID: 607754459}
   - {fileID: 1856833773}
-  - {fileID: 7208629999709502761}
   - {fileID: 6589104918586781647}
+  - {fileID: 7208629999709502761}
   - {fileID: 1850608201392579441}
   - {fileID: 645594299}
